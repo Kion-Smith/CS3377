@@ -2,10 +2,9 @@
 *  kls160430
 *  CS 3377.0W3
 */
-
+//create a program that counts characters in comments(single line and block)
 #include <stdio.h>
 #include <stdlib.h>
-
 int main(int argc, char*argv[])
 {
 	//the file pointer and 
