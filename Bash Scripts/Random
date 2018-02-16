@@ -1,0 +1,11 @@
+#!/bin/bash
+firstNum=$[RANDOM%10+1]
+secondNum=$[RANDOM%10+1]
+echo $firstNum
+echo $secondNum
+if [ "$firstNum" -eq "$secondNum" ]
+then
+echo "Match found"
+else
+echo "Diff Nums"
+fi #end of if
