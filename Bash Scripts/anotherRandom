@@ -1,0 +1,11 @@
+#!/bin/bash
+firstNum=$(shuf -i 0-10 -n 1)
+secondNum=$(shuf -i 0-10 -n 1)
+echo $firstNum
+echo $secondNum
+if [ "$firstNum" -eq "$secondNum" ]
+then
+echo "Match found"
+else
+echo "Diff Nums"
+fi #end of if
