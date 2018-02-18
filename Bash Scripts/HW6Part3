@@ -1,4 +1,7 @@
 #! /bin/bash
+#Kion Smith
+#kls160430
+#CS3377.0W3
 #get user input
 echo "Enter 2 numbers and I will out put basic calculations"
 echo "Enter the first number"

@@ -1,0 +1,12 @@
+#!/bin/bash
+#Kion Smith
+#kls160430
+#CS3377.0W3
+#copy current directory to coppied
+echo "Creating sub directory called Copied"
+rsync -Rr ./ ./Copied
+#remove the copy
+echo "Now deleting the sub directory"
+rm -rf ./Copied
+echo "Task Complete"
+
