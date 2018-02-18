@@ -1,0 +1,25 @@
+#!/bin/bash
+#Kion Smith
+#kls160430
+#CS3377.0W3
+
+echo "Part A"
+echo "------------"
+#Look for john in file
+grep John testFile
+echo "------------"
+echo "Part B"
+#Look for words starting with capital J
+grep '^\J' testFile
+echo "------------"
+echo "Part C"
+#Look for words ending in stopped
+grep "stopped$" testFile
+echo "------------"
+echo "Part D"
+#look for any other line than ones with was
+grep -v "was" testFile
+echo "------------"
+echo "Part E"
+#look for capital k or lower case k (regex)
+grep  -E '^(K|k)' testFile
