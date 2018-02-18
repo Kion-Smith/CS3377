@@ -1,0 +1,17 @@
+#! /bin/bash
+#get user input
+echo "Enter 2 numbers and I will out put basic calculations"
+echo "Enter the first number"
+read x
+echo "Enter the next number"
+read y
+#Do the calculations
+addTotal=$(($x + $y))
+subTotal=$(($x - $y))
+multTotal=$(($x * $y))
+divTotal=$(($x / $y))
+#outprint totals
+echo "$x + $y = $addTotal"
+echo "$x - $y = $subTotal"
+echo "$x * $y = $multTotal"
+echo "$x / $y = $divTotal"
