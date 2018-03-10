@@ -61,7 +61,7 @@ highScore()
 	echo HighScores
 	echo ----------------------
 	#sort file by the second col and by numbers
-	sort -k 2 -n highscores.txt 
+	sort -k 2 -n highscores.txt | head -3
 }
 #start the program
 userInput
