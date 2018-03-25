@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+#For upper bound needs to be 11 because the range is not inclusive of 10
+$max = 11;
+$min = -10;
+#Generate randmo nums
+$rand1 = int(rand($max -$min)) + $min;
+$rand2 = int(rand($max -$min)) + $min;
+#display the nums
+print "$rand1 , $rand2 \n";
+#Check to see if they are equal
+if($rand1 == $rand2)
+{
+	print"Match Found\n";
+}
+else
+{
+	print"Different Numbers\n";
+}

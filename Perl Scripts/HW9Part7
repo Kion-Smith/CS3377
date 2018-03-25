@@ -1,0 +1,18 @@
+#!/usr/bin/perl
+#prompt user for file name
+print "Enter the file you want\n";
+chomp(my $userFile= <STDIN>);
+#open user file (appened mode)
+open(my $fh,'>>',"$userFile");
+$i=1;#counter
+#Loop for 100
+while($i!=101)
+{
+	#random number 0-99(100 is not included)
+	$rand = int(rand(100)); 
+	#Write to the file
+	print $fh "$rand\n";
+	#increment the counter
+	$i++;
+}
+

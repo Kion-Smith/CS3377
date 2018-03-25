@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+#initalize hash
+%x =("1"=>"Kion","2"=>"John","3"=>"Max");
+#loop for my values and keys in the hash
+while(my($key,$value) = each %x)
+{
+	#print my values and keys
+	print "Key = $key,";
+	print "Value = $value \n";
+}

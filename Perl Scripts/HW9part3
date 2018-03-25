@@ -1,0 +1,12 @@
+#!/usr/bin/perl
+#initalize scalars
+$x = 5;
+$y = 7;
+#display the sum of squares
+print "x's square is::";
+print ($x*$x);
+print "\nY's square is::";
+print ($y*$y);
+print "\nThe Sum of the Squares are ";
+print ($x*$x+$y*$y);
+print "\n";

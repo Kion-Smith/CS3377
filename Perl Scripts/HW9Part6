@@ -1,0 +1,40 @@
+#!/usr/bin/perl
+#get user input and stop when end of line
+print "Enter the first word\n";
+chomp(my $input1= <STDIN>);
+
+print "Enter the second word\n";
+chomp(my $input2= <STDIN>);
+
+print "Enter the third word\n";
+chomp(my $input3= <STDIN>);
+
+#check the inputs with each other
+if($input1 eq $input2)
+{
+	if($input1 eq $input3)
+	{
+		print"All three words are a match\n";
+	}
+	else
+	{
+		print"Only the first and second word are a match\n";
+	}
+
+}
+elsif($input1 eq $input3)
+{
+	print"Only the first and third words are a match\n";
+}
+elsif($input2 eq $input3)
+{
+	print"Only the second and third words are a match\n";
+}
+else
+{
+	print"None of the words are a match\n";
+}
+
+
+
+

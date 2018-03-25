@@ -1,0 +1,20 @@
+#!/usr/bin/perl
+sub question8
+{
+	#For upper bound needs to be 11 because the range is not inclusive of 10
+	$max = 11;
+	$min = -10;
+	#Generate randmo nums
+	$rand1 = int(rand($max -$min)) + $min;
+	$rand2 = int(rand($max -$min)) + $min;
+
+	print "The first numbers ($rand1) square is ::";
+	print $rand1*$rand1;
+	print "\nThe second numbers ($rand2) square is ::";
+	print $rand2*$rand2;
+	print "\nThe Sum of the squares are ";
+	print ($rand1*$rand1+$rand2*$rand2);
+	print "\n";
+}
+
+question8();
