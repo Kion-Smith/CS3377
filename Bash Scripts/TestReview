@@ -1,0 +1,41 @@
+#!/bin/bash
+
+function first1()
+{
+	num1=-10
+	num2=10
+	rand1=$[RANDOM%(num2-num1+1)+num1]
+	rand2=$[RANDOM%(num2-num1+1)+num1]
+	avg=$[($rand1+$rand2)/2]
+	echo "The first number is $rand1"
+	echo The second number is "$rand2"
+	echo "The avg is" $avg
+}
+first2()
+{
+	num1=-10
+	num2=10
+	rand1=$[RANDOM%(num2-num1+1)+num1]
+	echo Enter a number between -10 and 10
+	read rand2	
+	if [ "$rand2" -ge 11 ] || [ "$rand2" -le -11 ] 
+	then
+	echo "Not in the bound"
+	elif [ "$rand1" -le -1  ] && [ "$rand2" -le -1  ] 
+	then
+	echo "Your numbers are the same sign"
+	elif [ "$rand1" -ge 0  ] && [ "$rand2" -ge 0  ] 
+	then
+	echo "Your numbers are the same sign"
+	else
+		echo "Numbers are not the same sign"
+	fi
+
+	echo "Random $rand1"	
+	echo "Your number $rand2"
+	
+}
+
+
+first1
+first2
