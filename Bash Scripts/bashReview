@@ -1,0 +1,59 @@
+#!/bin/bash
+min=-25
+max=25
+declare -a randArray 
+
+posNum=0
+negNum=0
+maxNum=0
+minNum=0
+avg=0
+sumNum=0
+
+count=1
+while [ "$count" -le 100 ]
+do
+	rand=$[RANDOM%(max-min+1)+min]
+	randArray[$count]=$rand
+	if [ "$rand" -le -1 ]
+	then
+		posNum=$[posNum+1]
+	else
+		negNum=$[negNum+1]
+	fi
+	
+	if [ "$rand" -ge "$maxNum" ]
+	then
+		maxNum=$rand
+	fi
+
+	if [ "$rand" -le "$minNum" ]
+	then
+		minNum=$rand
+	fi
+
+	echo "$rand" 
+	sumNum=$[sumNum+rand]
+	count=$[count+1]
+done
+ 
+#Outprints the array
+#for i in ${randArray[@]} 
+#do 
+	#echo $i; 
+#done
+
+echo "Number of P $posNum  and N: $negNum"
+echo "max num is $maxNum min num is $minNum"
+echo $sumNum
+avg=$[sumNum/100]
+echo $avg
+
+echo "Max = $maxNum" >> "repotsbash.txt"
+echo "Min = $minNum" >> "repotsbash.txt"
+echo "Postive = $posNum" >> "repotsbash.txt"
+echo "Negative = $negNum" >> "repotsbash.txt"
+echo "avg = $avg" >> "repotsbash.txt"
+echo "------------------------------" >> "repotsbash.txt"
+
+
