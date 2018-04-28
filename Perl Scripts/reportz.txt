@@ -1,0 +1,6 @@
+Max = 25 
+Min = -25 
+Postive = 52 
+Negatives = 48 
+Avg = 1 
+---------------------

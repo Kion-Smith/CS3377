@@ -1,0 +1,58 @@
+#!/usr/bin/perl
+#Kion Smith 
+#review problems
+$min = -25;
+$max = 26;
+@randArray =();
+
+$count = 1;
+$posNum = 0;
+$negNum = 0;
+$minNum = 26;
+$maxNum = -26;
+$avg =0;
+$sum =0;
+
+while($count<=100)
+{
+	$rand = int(rand($max -$min)) + $min;
+
+	if($rand > $maxNum )
+	{
+		$maxNum = $rand;
+	}
+
+	if($rand < $minNum )
+	{
+		$minNum = $rand;
+	}
+
+	if($rand > -1)
+	{
+		$posNum+=1;
+	}
+	else
+	{
+		$negNum+=1;	
+	}
+	
+	$sum += $rand;
+	@randArray[$count] = ($rand);
+	$count +=1;
+}
+
+$avg = ($sum/100);
+print "Max = $maxNum Min = $minNum\n";
+print "postive = $posNum negative = $negNum\n";
+print "Sum = $sum\n";
+print "Avg = $avg\n";
+print "@randArray\n";
+
+open(my $fh, '>>',"reportz.txt");
+print $fh "Max = $maxNum \n";
+print $fh "Min = $minNum \n";
+print $fh "Postive = $posNum \n";
+print $fh "Negatives = $negNum \n";
+print $fh "Avg = $avg \n";
+print $fh "---------------------\n";
+
