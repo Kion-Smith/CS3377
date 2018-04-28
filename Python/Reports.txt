@@ -1,0 +1,12 @@
+Postives = 50
+Negatives = 50
+Min = -25
+Max = 25
+Avg = 0
+------------------------ 
+Postives = 53
+Negatives = 47
+Min = -25
+Max = 25
+Avg = 0
+------------------------ 
